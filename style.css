@@ -1,0 +1,678 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html,body{
+  overflow-x: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -2;
+    
+
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+
+  
+}
+.navbar-toggler{
+  background: white;
+}
+.navbar-brand{
+  color: white;
+}
+.navbar-brand:hover{
+  color: #FABC2A;
+}
+#offcanvasNavbarLabel{
+  color: white;
+}
+.nav-link:hover{
+  color: #FABC2A;
+}
+#active{
+  color: #FABC2A;
+}
+
+.offcanvas{
+  background: black;
+}
+
+
+.hero-heading{
+    color: white;
+   margin: 15% 20%;
+    display: flex;
+    flex-direction: column;
+     
+}
+.hero-heading h1{
+    font-size: 2.5rem;
+    
+}
+
+#cta{
+    border:none;
+    padding: 10px 15px;
+    color: white;
+    border: 1px solid white;
+    background: transparent;
+    transition: 0.5s ease-in-out;
+  
+}
+#cta:hover{
+    background:#FABC2A;
+    color: #000;
+    transition: 0.5s ease-in-out;
+}
+.icons,.bi{
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+  
+}
+.bi:hover{
+    color: #FABC2A;
+    transition: 0.5s ease;
+}
+.btn{
+    cursor: pointer;
+}
+#talkBtn{
+    border: none;
+    padding: 10px 15px;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    transition: 0.5s ease-in-out;
+}
+#talkBtn:hover{
+    transition: 0.6s ease-in-out;
+    background:#FABC2A;
+    color: black;
+}
+.nav-link,.active{
+    color: white;
+}
+
+.aboutus{
+    margin-top: 15%;
+}
+.aboutus h1{
+    text-align: center;
+    color: black;
+}
+.card{
+    cursor: pointer;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /****vissio-mision-section*/
+}
+.vision-mission-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: black;
+
+  }
+  
+  .content {
+    max-width: 60%;
+  }
+  
+  .content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .vision-mission {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .vision, .mission {
+    max-width: 45%;
+  }
+  
+  .vision h2, .mission h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .vision p, .mission p {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  .image {
+    max-width: 30%;
+  }
+  
+  .image img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .our-services{
+    padding: 10px;
+  }
+  .our-services h1{
+    color: white;
+  }
+  .card{
+    margin: 35px;
+  }
+  .our-services{
+    background: black;
+  }
+  .card{
+    background: transparent;
+  }
+  .card-text, .card-title{
+    color: white;
+  }
+ 
+ img{
+transition: scale 400ms;
+
+ }
+ img:hover{
+  scale:120%;
+ }
+ /*pricing section*/
+ .Pricing{
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+
+
+ 
+ }
+ .pricing-heading{
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+  font-size: 2.5rem;
+  padding: 10px;
+ }
+ 
+.pack-container {
+  position: relative;
+  display: flex;
+  max-width: 350px;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color:black;
+  border: 1px solid #fff;
+  padding: 1.6rem;
+  color: #fff;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.header {
+  position: relative;
+  margin: 0;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.title {
+  display: block;
+  font-family: sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  color: #fff
+}
+
+.price-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  font-family: sans-serif;
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.button-container {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.button-container button {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #000;
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+.button-container button:hover{
+  background:#FABC2A;
+color: black;
+  transition: 0.5s ease-in-out;
+}
+/*contact us section*/
+
+.contact-box{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.contact h1{
+  color: black;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: 10px;
+}
+.input-field{
+  width: 80%;
+  margin: 20px;
+  padding: 8px;
+}
+.input-field::placeholder{
+  color: black;
+}
+.input-field:active,
+.input-field:focus {
+  border: 1px solid #FABC2A;
+  outline: none;
+}
+
+#msgArea{
+  overflow: hidden;
+  resize: none;
+  height: 150px;
+}
+
+#msgBtn{
+margin-top: 20px;
+margin-right: 71%;
+border: none;
+padding: 15px,20px;
+background: black;
+color: white;
+border-radius: 5px;
+padding: 10px;
+transition: 0.5s ease-in-out
+}
+#msgBtn:hover{
+  background: #FABC2A;
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+/****Footer section*/
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  padding: 10%;
+  background-color: #000;
+  color: white;
+}
+#News{
+  color: #FABC2A;
+}
+.end{
+  color: black;
+}
+.end{
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  background: hsl(0, 0%, 20%);
+  height:30px;
+  
+}
+.scrolltoTop {
+  position: fixed; 
+  bottom: 20px;
+  right: 20px; 
+  width: 50px; 
+  height: 50px; 
+  background-color: #FABC2A;
+  color: white; 
+  border: none; 
+  border-radius: 50%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 18px;
+  opacity: 1; 
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out; 
+}
+
+
+
+.scrolltoTop i {
+  font-size: 24px;
+  color: white;
+}
+
+.scrolltoTop:hover {
+  background-color: #f0a500; /* Darker shade on hover */
+}
+
+
+.bi-arrow-up-short{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+
+}
+
+.bi-arrow-up-short:hover{
+  color: black;
+  
+}
+/*media querries*/
+
+
+  @media (max-width: 480px) {
+  
+  
+    body {
+      font-size: 14px; 
+    }
+  
+    h1.pricing-heading,
+    h1 {
+      font-size: 1.5rem; 
+      text-align: center; 
+    }
+  
+  
+    
+    .Pricing {
+      display: flex;
+      flex-direction: column; 
+      gap: 20px; 
+      padding: 10px; 
+    }
+  
+    .pack-container {
+      border: 1px solid #ddd; 
+      border-radius: 5px; 
+      padding: 15px; 
+      text-align: center; 
+    }
+  
+    .pack-container .header .title {
+      font-size: 1.2rem; 
+      margin-bottom: 10px;
+    }
+  
+    .price-container {
+      font-size: 1.5rem; 
+      margin: 10px 0;
+    }
+  
+    .details p {
+      font-size: 0.9rem; 
+      margin: 10px 0;
+    }
+  
+    .button-container button {
+      font-size: 1rem;
+      padding: 8px 15px;
+      border: none;
+      background-color: #007BFF; 
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    .button-container button:hover {
+      background-color: #0056b3; 
+    }
+  
+   
+    .contact {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .contact h1 {
+      font-size: 1.5rem; 
+    }
+  
+    .contact-box {
+      display: flex;
+      flex-direction: column; 
+      gap: 15px; 
+      width: 100%;
+      max-width: 300px; 
+      margin: 0 auto; 
+    }
+  
+    .input-field {
+      font-size: 0.9rem;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 100%;
+    }
+    #msgBtn{
+      padding: 15px;
+      margin: 10px;
+      width: 50%;
+     }
+     .our-services{
+      flex-direction: column;
+      display: flex;
+     }
+     .vision-mission-section {
+      flex-direction: column; 
+      padding: 20px; 
+      text-align: center;
+    }
+  
+    .content {
+      max-width: 100%; 
+      margin-bottom: 20px; 
+    }
+  
+    .content h1 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+    .icons,.bi{
+      display: flex;
+      color: white;
+      cursor: pointer;
+    }
+  
+    
+    .vision-mission {
+      flex-direction: column; 
+      gap: 30px; 
+      }
+  
+    .vision, .mission {
+      max-width: 100%; 
+    }
+  
+    .vision h2, .mission h2 {
+      font-size: 1.3rem; 
+      margin-bottom: 10px;
+    }
+  
+    .vision p, .mission p {
+      font-size: 0.9rem; 
+      line-height: 1.6; 
+    }
+    .hero{
+      margin-bottom: 50%;
+     
+    }
+  .hero-heading h1{
+    text-align: center;
+  }
+  .hero-heading p{
+    font-size: 18px;
+  }
+  .cta-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #cta{
+    background: black;
+    color: white;
+  }
+  .hero-heading p{
+    font-size: 18px;
+    text-align: center;
+  }
+  
+    .image {
+      max-width: 100%; 
+      margin-top: 20px; 
+    }
+  
+    .image img {
+      width: 100%;  
+    }
+  
+    .card-container {
+      flex-direction: column; 
+      gap: 2px; 
+      align-items: center;
+    }
+  
+    .card {
+    
+      width: 100%; 
+      max-width: 300px; 
+      padding: 15px; 
+      border-radius: 5px; 
+    }
+    .footer{
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-heading{
+     display: none;
+    }
+    .social-icons{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+
+  @media (max-width: 768px){
+
+    .aboutus h1{
+      font-weight: bold;
+      margin-top: 28%;
+      color: black;
+      font-size: 2.5rem;
+      padding: 10px;
+    }
+    .card-container {
+      flex-direction: column; 
+      gap: 2px; 
+      align-items: center; 
+    }
+  
+    .card {
+      width: 100%;       
+      max-width: 300px; 
+      padding: 15px; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+      border-radius: 5px; 
+    }
+    .social-icons{
+      display: flex;
+    
+    }
+    .footer {
+      grid-template-columns: 1fr; 
+      text-align: center; 
+    }
+  
+  .footer-heading{
+    display: none;
+  }
+   .bi{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   
+  }
+  .social-icons{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icons,.bi{
+    display: flex;
+    color: white;
+    cursor: pointer;
+  }
+  
+
+  }
+  
+
+  
+ 
+  
+
