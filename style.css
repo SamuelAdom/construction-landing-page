@@ -61,6 +61,13 @@ header::after {
 .offcanvas{
   background: black;
 }
+.btn-close{
+ 
+  background-color:#FABC2A;
+}
+.btn-close:hover{
+  background-color: white;
+}
 
 
 .hero-heading{
@@ -576,7 +583,7 @@ transition: 0.5s ease-in-out
     align-items: center;
   }
   #cta{
-    background: black;
+    border: 2px solid #FABC2A;
     color: white;
   }
   .hero-heading p{
