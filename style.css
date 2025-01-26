@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+  
 }
 html,body{
   overflow-x: hidden;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 header::before {
     content: "";
     position: absolute;
@@ -117,10 +119,10 @@ header::after {
     color: white;
 }
 
-.aboutus{
+#aboutus{
     margin-top: 15%;
 }
-.aboutus h1{
+#aboutus h1{
     text-align: center;
     color: black;
 }
@@ -184,16 +186,16 @@ header::after {
     width: 100%;
     border-radius: 5px;
   }
-  .our-services{
+  #our-services{
     padding: 10px;
   }
-  .our-services h1{
+  #our-services h1{
     color: white;
   }
   .card{
     margin: 35px;
   }
-  .our-services{
+  #our-services{
     background: black;
   }
   .card{
@@ -307,7 +309,7 @@ color: black;
 }
 
 
-.contact h1{
+#contact h1{
   color: black;
   font-weight: bold;
   font-size: 2.5rem;
@@ -461,8 +463,11 @@ transition: 0.5s ease-in-out
     .details p {
       font-size: 0.9rem; 
       margin: 10px 0;
-    }
   
+    }
+  ul li{
+    text-align: left;
+  }
     .button-container button {
       font-size: 1rem;
       padding: 8px 15px;
@@ -477,13 +482,15 @@ transition: 0.5s ease-in-out
       background-color: #0056b3; 
     }
   
-   
-    .contact {
+   img{
+    transition: none;
+   }
+    #contact {
       padding: 10px;
       text-align: center;
     }
   
-    .contact h1 {
+    #contact h1 {
       font-size: 1.5rem; 
     }
   
@@ -508,7 +515,7 @@ transition: 0.5s ease-in-out
       margin: 10px;
       width: 50%;
      }
-     .our-services{
+     #our-services{
       flex-direction: column;
       display: flex;
      }
@@ -599,6 +606,19 @@ transition: 0.5s ease-in-out
       padding: 15px; 
       border-radius: 5px; 
     }
+    .card-body {
+      padding: 10px; 
+    }
+  
+    .card-title {
+      font-size: 1.1rem;  
+      text-align: center;  
+    }
+  
+    .card-text {
+      font-size: 0.9rem;  
+      text-align: center; 
+    }
     .footer{
       display: flex;
       flex-direction: column;
@@ -617,7 +637,7 @@ transition: 0.5s ease-in-out
 
   @media (max-width: 768px){
 
-    .aboutus h1{
+    #aboutus h1{
       font-weight: bold;
       margin-top: 28%;
       color: black;
@@ -637,6 +657,105 @@ transition: 0.5s ease-in-out
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
       border-radius: 5px; 
     }
+  #our-services h1 {
+    font-size: 1.75rem;  
+    text-align: center;  
+    margin-bottom: 20px;  
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;  
+    gap: 15px;  
+  }
+
+  .card-group {
+    display: flex;
+    flex-direction: column;  
+    gap: 15px;  
+  }
+
+  .card {
+    margin: 0 auto;  
+    width: 100%;  
+    max-width: 500px;  
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;  
+  }
+
+  .card-body {
+    padding: 15px; 
+  }
+
+  .card-title {
+    font-size: 1.25rem;  
+    text-align: center; 
+  }
+
+  .card-text {
+    font-size: 1rem;  
+    text-align: justify;  
+  }
+  .vision-mission-section {
+    flex-direction: column;  
+    padding: 20px;
+  }
+
+  .content {
+    max-width: 100%;  
+    text-align: center;  
+    margin-bottom: 20px;  
+  }
+
+  .content h1 {
+    font-size: 1.8rem;  
+    margin-bottom: 15px;  
+  }
+
+  .vision-mission {
+    flex-direction: column;  
+    gap: 20px;
+  }
+
+  .vision, .mission {
+    max-width: 100%;  
+  }
+
+  .vision h2, .mission h2 {
+    font-size: 1.3rem;  
+    margin-bottom: 10px;
+  }
+
+  .vision p, .mission p {
+    font-size: 1rem; 
+    text-align: justify; 
+  }
+
+  .image {
+    max-width: 100%;  
+    margin-top: 20px;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;  
+    transition: none;
+  }
+  img{
+    transition: none;
+   }
+  #our-services h1 {
+    font-size: 1.8rem;  
+  }
+
+  .card {
+    margin: 15px 0; 
+  }
     .social-icons{
       display: flex;
     
@@ -667,9 +786,34 @@ transition: 0.5s ease-in-out
     color: white;
     cursor: pointer;
   }
+  .Pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-heading {
+    font-size: 2rem;
+  }
+
+  .pack-container {
+    max-width: 90%;
+    margin: 10px 0;
+  }
+
+  .price-container {
+    font-size: 3rem;
+  }
+
+  .button-container button {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
   
 
-  }
+}
+
+
+
   
 
   
